@@ -12,3 +12,8 @@ Using HTML, CSS, vanilla JavaScript, and a public API I will construct the websi
 - In HTML: place 2 search bars / buttons (input for each player) in their own divs to GET data and also display results once pulled (player photo and stats)
 - In CSS: use styles to give the site a clean and crisp look. 
 - In JS: use NBA API to make calls pulling the requested data and display it on site by referencing specific elements in HTML
+
+
+Trello (whiteboard): https://trello.com/b/CV4UFyJ1/intro-to-trello
+
+Figma (wireframe): https://www.figma.com/file/OwRs0J8vD50YKOlrOLQael/Untitled?type=design&node-id=1-3&t=mNdcaiTQdsonCoYv-0

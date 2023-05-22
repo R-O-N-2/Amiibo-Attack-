@@ -1,0 +1,26 @@
+html {
+    background-color: rgb(193, 217, 217)
+}
+#title {
+
+    opacity: .75;
+    color: white;
+    text-align: center;
+    margin: 0 auto 25px;
+}
+
+#titleBox {
+    background-image: url(https://library.sportingnews.com/styles/facebook_1200x630/s3/2023-04/NBA-Top-30-Players-2023-%28With-Text%29.jpg?itok=VLg48EoW);
+    height: 100px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+#plyrBox {
+    display: flex;
+    flex-direction:row;
+    margin: 10px auto;
+}

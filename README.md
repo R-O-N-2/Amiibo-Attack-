@@ -7,7 +7,6 @@ Amiibo Attack is a site where amiibo connoisseurs come to challenge their knowle
 Using HTML, CSS, vanilla JavaScript, and a public API I will construct the website using a search bar to get input with an abstract button that is encapsulated and also inherits properties that will cause the object to change its form making it polymorphic! 
 
 
-
 - In HTML: place 2 search bars / buttons (input for each amiibo) in their own divs to GET data and also display results once pulled (amiibo photo and info)
 - In CSS: use styles to give the site a clean and crisp look. 
 - In JS: use Amiibo API to make calls pulling the requested data and display it on site by referencing specific elements in HTML

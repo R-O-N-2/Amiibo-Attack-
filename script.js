@@ -32,7 +32,7 @@ button1.addEventListener('click', async () => {
         plyr1Release2.style.display = 'none'
         plyr1Photo2.style.display = 'none'
     
-        }else {}
+        }else {
     plyr1Name.innerHTML = `Name: ${response1.data.amiibo[0].name}`
     plyr1Photo1.innerHTML = `<img alt="An image of ${response1.data.amiibo[0].name}." src="${response1.data.amiibo[0].image}"/>`
     plyr1Series1.innerHTML = `Game Series: ${response1.data.amiibo[0].gameSeries}`
@@ -44,7 +44,7 @@ button1.addEventListener('click', async () => {
     plyr1Series2.style.display = 'block'
     plyr1Release2.style.display = 'inline'
     plyr1Photo2.style.display = 'inline'
-
+}
     
     console.log(response1.data)
 })

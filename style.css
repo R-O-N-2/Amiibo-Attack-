@@ -112,6 +112,25 @@ body {
 @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
+      font-size: .75em;
+      
     }
-
+    #plyr1Photo1 img {
+        max-width: 100px; 
+        position: relative; 
+    }
+    
+    #plyr1Photo2 img {
+        max-width: 100px;  
+    }
+    
+    #plyr2Photo1 img {
+        max-width: 100px;  
+    }
+    
+    #plyr2Photo2 img {
+        max-width: 100px;  
+        position: relative;    
+    }
+   
 }

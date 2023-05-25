@@ -22,7 +22,7 @@ button1.addEventListener('click', async () => {
     let response1 = await axios.get(`https://www.amiiboapi.com/api/amiibo/?name=${person1}`)
         
     if (response1.data.amiibo.length < 2){
-        plyr1Name.innerHTML = `Name: ${response1.data.amiibo[0].name}`
+        plyr1Name.innerHTML = `${response1.data.amiibo[0].name}`
         plyr1Photo1.innerHTML = `<img alt="An image of ${response1.data.amiibo[0].name}." src="${response1.data.amiibo[0].image}"/>`
         plyr1Series1.innerHTML = `Game Series: ${response1.data.amiibo[0].gameSeries}`
         plyr1Release1.innerHTML= `Amiibo Release Date: ${response1.data.amiibo[0].release.na}`
@@ -33,7 +33,7 @@ button1.addEventListener('click', async () => {
         plyr1Photo2.style.display = 'none'
     
         }else {
-    plyr1Name.innerHTML = `Name: ${response1.data.amiibo[0].name}`
+    plyr1Name.innerHTML = `${response1.data.amiibo[0].name}`
     plyr1Photo1.innerHTML = `<img alt="An image of ${response1.data.amiibo[0].name}." src="${response1.data.amiibo[0].image}"/>`
     plyr1Series1.innerHTML = `Game Series: ${response1.data.amiibo[0].gameSeries}`
     plyr1Release1.innerHTML= `Amiibo Release Date: ${response1.data.amiibo[0].release.na}`
@@ -75,7 +75,7 @@ button2.addEventListener('click', async () => {
     let response2 = await axios.get(`https://www.amiiboapi.com/api/amiibo/?name=${person2}`)
     
     if (response2.data.amiibo.length < 2){
-        plyr2Name.innerHTML = `Name: ${response2.data.amiibo[0].name}`
+        plyr2Name.innerHTML = `${response2.data.amiibo[0].name}`
         plyr2Photo1.innerHTML = `<img alt="An image of ${response2.data.amiibo[0].name}." src="${response2.data.amiibo[0].image}"/>`
         plyr2Series1.innerHTML = `Game Series: ${response2.data.amiibo[0].gameSeries}`
         plyr2Release1.innerHTML= `Amiibo Release Date: ${response2.data.amiibo[0].release.na}`
@@ -86,7 +86,7 @@ button2.addEventListener('click', async () => {
         plyr2Photo2.style.display = 'none'
 
         }else {
-            plyr2Name.innerHTML = `Name: ${response2.data.amiibo[0].name}`
+            plyr2Name.innerHTML = `${response2.data.amiibo[0].name}`
             plyr2Photo1.innerHTML = `<img alt="An image of ${response2.data.amiibo[0].name}." src="${response2.data.amiibo[0].image}"/>`
             plyr2Series1.innerHTML = `Game Series: ${response2.data.amiibo[0].gameSeries}`
             plyr2Release1.innerHTML= `Amiibo Release Date: ${response2.data.amiibo[0].release.na}`
@@ -103,4 +103,22 @@ button2.addEventListener('click', async () => {
         
        
     console.log(response2.data)
+
+
+
+
+})
+
+let fightBtn = document.querySelector('#fightBtn')
+let fightText = document.querySelector('#fightText')
+
+
+fightBtn.addEventListener('click', () => {
+     
+    if (Math.ceil(Math.random()*2)===1) {
+        fightText.textContent = `${document.querySelector('#plyr1Name').innerHTML} Wins!`
+    }else {
+        fightText.textContent = `${document.querySelector('#plyr2Name').innerHTML} Wins!`
+    }
+    
 })

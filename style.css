@@ -4,6 +4,10 @@ html {
     font-family: 'Pangolin', cursive;
 }
 
+body {
+
+}
+
 #title {
     opacity: .75;
     color: rgb(40, 190, 50);
@@ -21,6 +25,7 @@ html {
     display: flex;
     align-items: center;
     border-radius: 50%;
+    border: yellow 4px solid;
     
 }
 
@@ -31,6 +36,13 @@ html {
     flex-direction:row;
     flex-wrap: nowrap;
     margin: 10px auto;
+}
+
+#fightBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .plyrPhotos {
@@ -45,6 +57,7 @@ html {
     background-color: rgb(40, 190, 50);
     border-top-left-radius: 15%;
     border-top-right-radius: 15%; 
+    border: yellow 4px solid;
 
 }
 
@@ -53,7 +66,22 @@ html {
     background-color: rgb(40, 190, 50);
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
+    border: yellow 4px solid;
 
+}
+
+#fightText {
+    color: white;
+}
+
+#plyr1Name {
+    text-shadow: 2px 2px 2px white;
+    font-size: 30px;
+}
+
+#plyr2Name {
+    text-shadow: 2px 2px 2px white;
+    font-size: 30px;
 }
 
 #plyr1Photo1 img {
@@ -70,4 +98,20 @@ html {
 
 #plyr2Photo2 img {
     max-width: 350px;  
+}
+
+#fightBtn{
+    background: red;
+    border: yellow solid;
+    font-size: 20px;
+    color: white;
+    border-radius: 25%;
+    
+
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
 }
